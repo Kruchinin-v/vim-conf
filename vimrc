@@ -17,7 +17,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -72,7 +72,7 @@ syntax on "Включить подсветку синтаксиса
 
 " set nu "Включаем нумерацию строк
 set mousehide "Спрятать курсор мыши когда набираем текст
-set mouse=a "Включить поддержку мыши
+set mouse= "Выключить поддержку мыши; mouse=a - включить
 set termencoding=utf-8 "Кодировка терминала
 set novisualbell "Не мигать 
 set t_vb= "Не пищать! (Опции 'не портить текст', к сожалению, нету)
@@ -109,7 +109,6 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
-"
 "Борьба с лесенкой при вставке
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"

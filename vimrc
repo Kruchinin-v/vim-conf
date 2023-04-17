@@ -103,6 +103,7 @@ nnoremap <C-P> :bprev<CR>
 set visualbell t_vb=
 
 colorscheme OceanicNext
+hi Normal guibg=NONE ctermbg=NONE
 
 "запомнить позицию курсора
 autocmd BufReadPost *
